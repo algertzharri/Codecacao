@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Add Rating!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+{% block body %}
+ 
+<div class="container">
+       <div class="row">
+           <div class="col-sm-4">
+               <h2 class=page-header>Add a rating</h2>
+ 
+                   {{form_start(form)}}
+                   {{form_widget(form)}}
+                   {{form_end(form)}}
+ 
+           </div>
+       </div>
+</div>
+ 
+{% endblock %}

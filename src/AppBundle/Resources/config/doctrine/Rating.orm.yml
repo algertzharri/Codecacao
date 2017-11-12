@@ -1,0 +1,21 @@
+AppBundle\Entity\Rating:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\RatingRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        visitorid:
+            type: string
+            length: 255
+        uri:
+            type: string
+            length: 255
+        rating:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

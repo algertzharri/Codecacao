@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Rating View!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+{% block body %}
+ 
+<div class="container">
+       <div class="row">
+           <div class="col-sm-4">
+               <h2 class=page-header>Rating View</h2>
+			   <h5><strong>JSON View</strong></h5>
+			   <p>
+				{{ response }}
+				</p>
+				<h5><strong>Text/html view</strong></h5>
+				<p>
+				Ranking details for "{{ visitorid }}" are:<br/>
+				ID: {{ visitorid }}<br/>
+				URI: {{ uri }}<br/>
+				RATING: {{ rating }}
+				
+				</p>
+ 
+           </div>
+       </div>
+</div>
+ 
+{% endblock %}
